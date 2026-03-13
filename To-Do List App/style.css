@@ -39,8 +39,8 @@ button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #2575fc;
-    color: white;
+    background: #ddda34,#6d6f74;
+    color: rgb(124, 119, 119);
     transition: 0.3s;
 }
 

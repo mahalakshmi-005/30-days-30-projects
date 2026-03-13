@@ -1,0 +1,156 @@
+body {
+
+    font-family: 'Times New Roman', Times, serif;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 5s ease infinite;
+
+}
+.container {
+
+    backdrop-filter: blur(20px);
+
+    background: rgba(255, 255, 255, 0.2);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    width: 330px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    color: rgb(5, 1, 1);
+
+    animation: fade 1s ease;
+
+}
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.weather-card {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(20px);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    width: 320px;
+
+    color: white;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+
+    animation: cardFloat 2s ease;
+
+}
+
+@keyframes cardFloat {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+input {
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    width: 70%;
+
+    margin-top: 10px;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #ff6ec4;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 10px;
+
+}
+
+button:hover {
+
+    transform: scale(1.1);
+
+    background: #7873f5;
+
+}
+
+#weatherResult {
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    animation: fadeIn 1s;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
